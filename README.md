@@ -1,2 +1,3 @@
 # phantom-api
-Just a simple api abstraction for Phantom.js
+
+> Just a simple api abstraction for Phantom.js

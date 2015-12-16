@@ -1,0 +1,9 @@
+{
+  "development": {
+    "uri": "localhost",
+    "port": 3500,
+    "logentries": {
+      "token": ""
+    }
+  }
+}
