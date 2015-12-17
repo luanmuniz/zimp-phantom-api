@@ -5,7 +5,7 @@ var configFile = require('./config/config.json'),
 	config = configFile[NODE_ENV],
 	logentries = require('logentries'),
 	phantom = require('./lib/phantom'),
-	io = require('socket-io')(config.port);
+	io = require('socket.io')(config.port);
 
 io.on('connect', socket => {
 	console.log('Socket.io on Phantom is connected!');
