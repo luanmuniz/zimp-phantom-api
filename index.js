@@ -1,11 +1,7 @@
 'use strict';
 
-var configFile = require('./config/config.json'),
-	NODE_ENV = process.env.NODE_ENV || 'development',
-	config = configFile[NODE_ENV],
-	logentries = require('logentries'),
-	phantom = require('./lib/phantom'),
-	io = require('socket.io')(config.port);
+var phantom = require('./lib/phantom'),
+	io = require('socket.io')(3500);
 
 io.on('connect', socket => {
 	console.log('Socket.io on Phantom is connected!');
