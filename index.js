@@ -12,7 +12,7 @@ server.listen(port);
 
 io.on('connect', socket => {
 	console.log('Socket.io on Phantom is connected!');
-	socket.on('spider', url => phantom.init(socket, url));
+	socket.on('spider', (url, options) => phantom.init(socket, url, options));
 });
 
 io.on('disconnect', () => {
