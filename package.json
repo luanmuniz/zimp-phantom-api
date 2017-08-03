@@ -31,6 +31,6 @@
   "dependencies": {
     "express": "^4.13.3",
     "logentries": "^1.0.2",
-    "socket.io": "^1.3.7"
+    "socket.io": "^2.0.0"
   }
 }
