@@ -17,7 +17,9 @@
     "start": "node index.js",
     "test": "gulp test",
     "update": "gulp update",
-    "fix": "gulp fix"
+    "fix": "gulp fix",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "chai": "^3.3.0",
@@ -31,6 +33,8 @@
   "dependencies": {
     "express": "^4.13.3",
     "logentries": "^1.0.2",
-    "socket.io": "^1.3.7"
-  }
+    "socket.io": "^2.0.2",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
